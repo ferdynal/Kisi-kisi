@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 200px;        
+    }
+
+    .tabFilter{
+        display: inline-block;
+        width: 75px;
+    }
+
+    fieldset{
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Daftar Identitas</h1>
+    </center>
+    <fieldset id="filter">
+        <legend>Filter</legend>
+        <form>
+            <label class="tabFilter">Nama: </label>
+            <input id="filterNama" type="text" placeholder="Nama"></br></br>
+            <label class="tabFilter">Umur: </label>
+            <input id="umur1" type="text" placeholder="Umur"> - <input id="umur2" type="text" placeholder="Umur"></br></br>
+            <label class="tabFilter">Pekerjaan: </label>
+            <select id="mySelect"></select><br><br>
+            <button>Search</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Input Data</legend>
+        <form>
+            <label>Nama: </label>
+            <input id="submitNama" type="text" placeholder="Nama">&nbsp;
+            <label>Umur: </label>
+            <input id="submitUmur" type="text" placeholder="Umur">&nbsp;
+            <label>Pekerjaan: </label>
+            <input id="submitPekerjaan" type="text" placeholder="Pekerjaan"></br></br>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tabel Data</legend>
+        <div id="tabelData"></div>
+    </fieldset>
+</body>
+
+<script>
+    var data = []
+
+    class Manusia {
+        constructor(nama, umur, pekerjaan){
+            this.nama = nama;
+            this.umur = umur;
+            this.pekerjaan = pekerjaan;
+
+        }
+
+    }
+</script>
+
+</html>
